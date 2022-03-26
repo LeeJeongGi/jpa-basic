@@ -22,7 +22,10 @@
 ###도메인 모델과 테이블 설계
 <img width="806" alt="image" src="https://user-images.githubusercontent.com/55478293/160220614-44b54646-9f1f-4764-a5ae-0f2686d2d499.png">
 
+
+
 ###회원 엔티티 분석
+<img width="805" alt="image" src="https://user-images.githubusercontent.com/55478293/160220782-c0872492-8cfb-49d7-b5e5-32122cfb707b.png">
 
 
 
