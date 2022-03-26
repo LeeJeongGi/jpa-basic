@@ -30,4 +30,4 @@
 
 
 ###회원 테이블 분석
-<img width="806" alt="image" src="https://user-images.githubusercontent.com/55478293/160220706-63b0301e-9f66-4b77-8482-2678614a6a4c.png">
+<img width="805" alt="image" src="https://user-images.githubusercontent.com/55478293/160220938-3a15acbc-0a6d-4d15-abb6-78550f7d2b52.png">
