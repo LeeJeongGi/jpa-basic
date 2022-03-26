@@ -20,7 +20,7 @@
 * 상품 주문시 배송 정보를 입력할 수 있다.
 
 ###도메인 모델과 테이블 설계
-<img width="806" alt="image" src="https://user-images.githubusercontent.com/55478293/160220614-44b54646-9f1f-4764-a5ae-0f2686d2d499.png">
+<img width="804" alt="image" src="https://user-images.githubusercontent.com/55478293/160220919-b8e71467-3747-4483-9d55-b02d8686eaba.png">
 
 
 
