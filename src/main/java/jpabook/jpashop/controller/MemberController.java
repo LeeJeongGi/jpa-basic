@@ -1,4 +1,4 @@
-package jpabook.jpashop.web;
+package jpabook.jpashop.controller;
 
 import jpabook.jpashop.domain.Address;
 import jpabook.jpashop.domain.Member;
@@ -22,14 +22,13 @@ public class MemberController {
     @GetMapping("/members/new")
     public String createForm(Model model) {
         model.addAttribute("memberForm", new MemberForm());
-
         return "members/createMemberForm";
     }
 
-    @PostMapping(value = "/members/new")
+    @PostMapping("/members/new")
     public String create(@Valid MemberForm form, BindingResult result) {
 
-        if(result.hasErrors()) {
+        if (result.hasErrors()) {
             return "members/createMemberForm";
         }
 
@@ -40,15 +39,14 @@ public class MemberController {
         member.setAddress(address);
 
         memberService.join(member);
-
         return "redirect:/";
     }
 
-    @GetMapping(value = "/members")
+    @GetMapping("/members")
     public String list(Model model) {
         List<Member> members = memberService.findMembers();
         model.addAttribute("members", members);
-
         return "members/memberList";
     }
+
 }
