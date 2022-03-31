@@ -14,7 +14,7 @@ public class ItemRepository {
     private final EntityManager em;
 
     public void save(Item item) {
-        if(item.getId() == null) {
+        if (item.getId() == null) {
             em.persist(item);
         } else {
             em.merge(item);
@@ -29,5 +29,4 @@ public class ItemRepository {
         return em.createQuery("select i from Item i", Item.class)
                 .getResultList();
     }
-
 }
