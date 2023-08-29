@@ -30,9 +30,9 @@ public class OrderRepository {
 
     public List<Order> findAllByString(OrderSearch orderSearch) {
 
-            String jpql = "select o from Order o join o.member m";
-            // 항상 true 라고 가정
-            boolean isFirstCondition = true;
+        String jpql = "select o from Order o join o.member m";
+        // 항상 true 라고 가정
+        boolean isFirstCondition = true;
 
         //주문 상태 검색
         if (orderSearch.getOrderStatus() != null) {
@@ -73,6 +73,7 @@ public class OrderRepository {
      * JPA Criteria
      */
     public List<Order> findAllByCriteria(OrderSearch orderSearch) {
+
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Order> cq = cb.createQuery(Order.class);
         Root<Order> o = cq.from(Order.class);
