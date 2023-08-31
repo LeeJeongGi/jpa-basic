@@ -20,8 +20,6 @@ public class Member {
     @Embedded
     private Address address;
 
-    private Integer age;
-
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 
